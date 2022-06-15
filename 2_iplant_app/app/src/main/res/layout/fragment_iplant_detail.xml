@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.IplantDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp">
+
+        <ImageButton
+            android:id="@+id/imgButtonBack"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_back_black"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonEditNameIplantDetail"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewNamePlant"
+            app:layout_constraintDimensionRatio="1:1"
+            android:alpha="0.4"
+            app:layout_constraintStart_toEndOf="@+id/textViewNamePlant"
+            app:layout_constraintTop_toTopOf="@+id/textViewNamePlant"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewNamePlant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:text="iplant1"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNamePlant"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonWater"
+                    android:text="Tưới cây"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:background="@drawable/theme_btn_login_signup"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+                    <Switch
+                        android:id="@+id/switchLedIplant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tìm cây"
+                        android:layout_marginEnd="40sp"/>
+                    <Switch
+                        android:id="@+id/switchUVIplant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bật đèn UV"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thông số iPlant"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Độ ẩm đất"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textSize="20sp"/>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/linechartSoil"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ánh sáng"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textSize="20sp"/>
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/linechartLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nhiệt độ"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textSize="20sp"/>
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/linechartTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

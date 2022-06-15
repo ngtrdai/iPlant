@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Iplant</string>
+    <string name="login">Đăng nhập</string>
+    <string name="signUp">Tạo tài khoản</string>
+    <string name="wellcome">Chào mừng bạn đến với iPlant</string>
+    <string name="createAcount">Chào mừng bạn đến với iPlant</string>
+    <string name="newAccount">Bạn chưa có tài khoản? <u><font fgcolor='#FF8E8E93'>Tạo tài khoản</font></u></string>
+    <string name="loginAccount">Bạn đã có tài khoản? <u><font fgcolor='#FF8E8E93'>Đăng nhập</font></u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="imgList">
+        <item>Hình iPlant 1</item>
+        <item>Hình iPlant 2</item>
+        <item>Hình iPlant 3</item>
+        <item>Hình iPlant 4</item>
+        <item>Hình iPlant 5</item>
+    </string-array>
+</resources>

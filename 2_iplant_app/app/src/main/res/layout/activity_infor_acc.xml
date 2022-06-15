@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InforAccActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/background_info">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/imgButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_back"
+            android:background="@color/green"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hồ sơ cá nhân"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textSize="25sp"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <View
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/theme_image"
+            android:layout_gravity="center"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageAvatarInfor"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_user"
+            android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/txtIplant"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="user acc"
+            android:textColor="#000000"
+            android:background="@drawable/theme_txt"
+            android:textSize="22sp" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/txtFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:text="ten ng dung"/>
+
+    <TextView
+        android:id="@+id/txtAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="user acc"
+        android:textColor="#C1C1C1"
+        android:textSize="18sp" />
+</LinearLayout>

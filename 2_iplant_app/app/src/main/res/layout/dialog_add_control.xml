@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_dialog_add_iplant"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:padding="10dp"
+            android:text="Hẹn giờ"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:gravity="center"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_dialog_add_iplant_body">
+
+            <Spinner
+                android:id="@+id/spinnerIplant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textViewTimeDialogControl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="12:00"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerIplant" />
+
+            <TextView
+                android:id="@+id/textViewDateDialogCotrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="22/07/2022"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTimeDialogControl" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonAddControl"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/background_dialog_add_iplant_button"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Đặt thời gian"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/buttonCancleAddControl"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switchAuto" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCancleAddControl"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Huỷ"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textAllCaps="false"
+                android:background="@drawable/background_dialog_add_iplant_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/buttonAddControl"
+                app:layout_constraintTop_toTopOf="@+id/buttonAddControl" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Ngày: "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toTopOf="@+id/textViewDateDialogCotrol" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời gian: "
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/spinnerIplant"
+                app:layout_constraintTop_toTopOf="@+id/textViewTimeDialogControl" />
+
+            <TextView
+                android:id="@+id/textViewDataDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="1sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Switch
+                android:id="@+id/switchUV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Đèn UV"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_sans_bold"
+                app:layout_constraintStart_toEndOf="@+id/switchWater"
+                app:layout_constraintTop_toTopOf="@+id/switchWater"
+                tools:ignore="TouchTargetSizeCheck"
+                android:trackTint="@color/green"
+                android:thumbTint="@color/green"
+                android:foregroundTint="@color/green"
+                android:buttonTint="@color/green_light"
+                android:textOn="on"
+                android:textOff="off"/>
+
+            <Switch
+                android:id="@+id/switchAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/green_light"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:foregroundTint="@color/green"
+                android:text="Hằng ngày"
+                android:textOff="off"
+                android:textOn="on"
+                android:textSize="20sp"
+                android:thumbTint="@color/green"
+                android:trackTint="@color/green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switchWater"
+                tools:ignore="TouchTargetSizeCheck" />
+            <Switch
+                android:id="@+id/switchWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Tưới cây"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_sans_bold"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                tools:ignore="TouchTargetSizeCheck"
+                android:trackTint="@color/green"
+                android:thumbTint="@color/green"
+                android:foregroundTint="@color/green"
+                android:buttonTint="@color/green_light"
+                android:textOn="on"
+                android:textOff="off"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

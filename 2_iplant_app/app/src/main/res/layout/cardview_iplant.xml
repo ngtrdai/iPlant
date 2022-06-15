@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        app:cardElevation="4dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green_light">
+
+            <TextView
+                android:id="@+id/textViewNamePlant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Iplant 1"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewIplantHome"
+                android:layout_width="150dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/sch"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="2:2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewLabelSoil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_soil"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:text="Độ ẩm đất"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewNamePlant"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNamePlant" />
+
+            <ProgressBar
+                android:id="@+id/progressBarSoil"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="75dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="30dp"
+                android:max="100"
+                android:min="0"
+                android:progress="50"
+                android:progressDrawable="@drawable/background_progressbar"
+                app:layout_constraintStart_toStartOf="@+id/textViewLabelSoil"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLabelSoil" />
+
+            <ProgressBar
+                android:id="@+id/progressBarWater"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="75dp"
+                android:layout_height="10dp"
+                android:max="100"
+                android:min="0"
+                android:progress="50"
+                android:progressDrawable="@drawable/background_progressbar"
+                app:layout_constraintStart_toStartOf="@+id/textViewValueTemp"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <ProgressBar
+                android:id="@+id/progressBarlight"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="75dp"
+                android:layout_height="10dp"
+                android:max="1000"
+                android:min="0"
+                android:progress="500"
+                android:progressDrawable="@drawable/background_progressbar"
+                app:layout_constraintStart_toStartOf="@+id/progressBarSoil"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_sun"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:text="Ánh sáng"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewLabelSoil"
+                app:layout_constraintTop_toBottomOf="@+id/progressBarSoil" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_tem"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:paddingStart="2dp"
+                android:text="Nhiệt độ"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/progressBarlight" />
+
+            <TextView
+                android:id="@+id/textViewValueTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium_italic"
+                android:text="27 °C"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/progressBarlight"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_water"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:paddingStart="5dp"
+                android:text="Lượng nước"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textViewValueTemp" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_swipe_delete"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xoá iPlant"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:textColor="#FDFBFB"
+            android:textSize="25sp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_delete_24" />
+
+    </LinearLayout>
+</FrameLayout>

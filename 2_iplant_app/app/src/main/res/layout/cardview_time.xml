@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAddAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imageControl"
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                android:layout_marginVertical="10dp"
+                android:src="@drawable/sch"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="2:2"
+                app:layout_constraintStart_toEndOf="@+id/textViewColorControl"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewNameIplantControl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:text="Chau 1"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/imageControl"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewTimeControl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:text="10:00"
+                android:textColor="#000000"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewNameIplantControl"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNameIplantControl" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:buttonTint="@color/green"
+                android:checked="true"
+                android:foregroundTint="@color/green"
+                android:thumbTint="@color/green"
+                android:trackTint="@color/green"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textViewDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="19/2"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewTimeControl"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTimeControl" />
+
+            <TextView
+                android:id="@+id/textViewColorControl"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:background="#EC0000"
+                android:text="  "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/imageViewWaterAlarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewSunAlarm"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNameIplantControl"
+                app:srcCompat="@drawable/ic_water_fill" />
+
+            <ImageView
+                android:id="@+id/imageViewSunAlarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageViewWaterAlarm"
+                app:srcCompat="@drawable/ic_sun_empty" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/background_swipe_delete"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xoá thời gian tưới"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:textColor="#FDFBFB"
+            android:textSize="20sp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_delete_24" />
+    </LinearLayout>
+
+
+
+</FrameLayout>

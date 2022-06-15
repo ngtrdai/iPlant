@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/background_cardview_control.xml" value="0.231" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/background_delete.xml" value="0.231" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/background_dialog_add_iplant.xml" value="0.262" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/background_dialog_add_iplant_button.xml" value="0.231" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/background_dialog_add_iplat_button_2.xml" value="0.262" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/background_inf.xml" value="0.221" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/background_inf_quick.xml" value="0.281" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/background_navigation_bottom.xml" value="0.2185" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/background_progressbar.xml" value="0.221" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/background_swipe_delete.xml" value="0.231" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/cursor_color.xml" value="0.221" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/ic_add.xml" value="0.2185" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/ic_add_white.xml" value="0.1885" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2185" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2345" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/ic_checked_iplant.xml" value="0.1465" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/ic_delete_24.xml" value="0.262" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/ic_eye.xml" value="0.221" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.221" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/ic_monstera.xml" value="0.281" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/ic_qr_code_svgrepo_com.xml" value="0.262" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/theme_btn_login_signup.xml" value="0.221" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/theme_image.xml" value="0.175" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/theme_txt.xml" value="0.167" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/drawable/tool_background.xml" value="0.221" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/activity_inf_accactivity.xml" value="0.25625" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/activity_infor_acc.xml" value="0.5032175032175032" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/activity_iplant_model.xml" value="0.1859375" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/activity_login_in.xml" value="0.264" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/activity_login_up.xml" value="0.23233695652173914" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/activity_main_body.xml" value="0.1" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/cardview_control.xml" value="0.33" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/cardview_empty.xml" value="0.325" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/cardview_iplant.xml" value="0.4" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/cardview_iplant_horizotal.xml" value="0.264" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/cardview_noti.xml" value="0.264" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/cardview_null_iplant.xml" value="0.25" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/cardview_time.xml" value="0.2" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/dialog_add_control.xml" value="0.30625" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/dialog_add_iplant.xml" value="0.29791666666666666" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/dialog_change_name_iplant.xml" value="0.2" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/dialog_confirm_delete_alarm.xml" value="0.30625" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/dialog_confirm_delete_iplant.xml" value="0.3625" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/dialog_edit_control.xml" value="0.5268505079825835" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/fragment_add_iplant.xml" value="0.25" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/fragment_alarm.xml" value="0.2507936507936508" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/fragment_control.xml" value="0.23233695652173914" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/fragment_home.xml" value="0.16363636363636364" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/fragment_iplant_detail.xml" value="0.3063477460901564" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/fragment_load_wait.xml" value="0.2682291666666667" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/fragment_notification.xml" value="0.2" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/profile_menu_layout.xml" value="0.23233695652173914" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/layout/tool_background.xml" value="0.23233695652173914" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/menu/navigation_bottom.xml" value="0.25" />
+        <entry key="..\:/Project_ute/Iplant2/app/src/main/res/menu/navigation_left.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
