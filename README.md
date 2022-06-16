@@ -77,9 +77,51 @@
   >
 </p>
 
+<p align="center">
+  <img 
+    width="600"
+    height="600"
+    src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Mach_MatTruoc.jpg"
+  >
+</p>
+
+<p align="center">
+  <img 
+    width="600"
+    height="600"
+    src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Mach_MatSau.jpg"
+  >
+</p>
+
 # Phần mềm
 
+Phần mềm của iPlant gồm 4 phần chính: Cơ sở dữ liệu, Website, ứng dụng Android và phần lập trình nhúng dưới Raspberry.
+
+## Cơ sở dữ liệu
+Cơ sở dữ liệu iPlant: [File SQL Backup](https://github.com/ngtrdai/iPlant/tree/master/1_iplant_web/2_Database).
+
+Cơ sở dữ liệu iPlant được xây dựng theo mối quan hệ N-N, một người dùng có thể có nhiều cậu cây, và một chậu cây có thể được tới nối bởi nhiều người.
+
+Mỗi chậu cây hay iPlant được định danh bằng một IMEI.
+
+<p align="center">
+  <img 
+    width="800"
+    height="800"
+    src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/CoSoDuLieu.svg"
+  >
+</p>
+
 ## Website
+
+Website iPlant được xây dựng dựa trên mô hình MVC với ngôn ngữ lập trình chính là PHP.
+<p align="center">
+  <img 
+    width="800"
+    height="1600"
+    src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/GiaoDienWebsite.svg"
+  >
+</p>
 
 ## Ứng dụng Android
 
