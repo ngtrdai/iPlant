@@ -1,12 +1,42 @@
-*********** PROJECT CUỐI KỲ - IOT - HỆ THỐNG NHÚNG ***********
-*********************** IPLANT PROJECT ***********************
-****************** https://iplant.svute.com ******************
+# **IoT in Mechatronics - Embedded System**
+---
+<p align="center" style="font-size: 30px; font-weight: bold">
+  iPlant Project
+</p>
+<p align="center">
+  <img 
+    width="300"
+    height="300"
+    src="https://iplant.svute.com/public/images/iPlant_logo.svg"
+  >
+</p>
 
-==============================================================
-# Thành viên:
-	[1]	Nguyễn Trọng Đại		- 19146146
-	[2]	Lê Phan Văn Việt		- 19146302
-	[3]	Trần Triệu Vĩ		- 19146301
+# Mục lục:
+1. [Thông tin môn học](#thông-tin-môn-học)
+2. [Thông tin đề tài](#thông-tin-về-đề-tài)
+   1. [Sơ đồ khối](#sơ-đồ-khối)
+   2. [Sơ đồ nguyên lí](#sơ-đồ-nguyên-lí)
+   3. [Sơ đồ lắp đặt](#sơ-đồ-lắp-đặt)
+   4. [Sản phẩm thực tế](#sản-phẩm-thực-tế)
+3. [Giao tiếp Arduino với các cảm biến](#giao-tiếp-giữa-arduino-và-cảm-biến)
+4. [Giới thiệu về phần mềm](#giới-thiệu-về-phần-mềm)
+   1. [Chức năng chính](#những-chức-năng-chính)
+   3. [Nhận dữ liệu từ Arduino và xử lý dữ liệu bằng C#](#nhận-dữ-liệu-từ-arduino-và-xử-lý-dữ-liệu-bằng-c)
+   4. [Giải pháp ghi dữ liệu vào Excel](#giải-pháp-ghi-dữ-liệu-vào-excel)
+   5. [Giải pháp đồ thị](#giải-pháp-về-lưu-đồ-thị)
+5. [Lời kết](#lời-kết)
+
+# Thông tin môn học:
+  
+* **Môn học:** IoT in Mechatronics - Embedded System
+* **Giảng viên:** TS. Bùi Hà Đức
+* **Thành viên:**
+```
+1. Nguyễn Trọng Đại 	- 19146146 		- @ngtrdai.
+2. Lê Phan Văn Việt		- 19147302 		- @ogarta
+3. Trần Triệu Vĩ 		- 19146301 		- @trantrieuvi.
+```
+
 
 ==============================================================
 # Cấu trúc thư mục
