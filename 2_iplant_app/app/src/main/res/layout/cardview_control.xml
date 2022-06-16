@@ -17,7 +17,7 @@
             android:weightSum="10">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="3">
 
                 <ImageView
@@ -30,10 +30,27 @@
                     app:layout_constraintDimensionRatio="2:2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <Switch
+                    android:id="@+id/switchStateControlIplant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:text="Auto"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:thumbTint="@color/green"
+                    android:trackTint="@color/green"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageControl"
+                    tools:ignore="TouchTargetSizeCheck" />
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="7"
                 android:background="@drawable/background_cardview_control">
 
@@ -129,22 +146,6 @@
                     app:layout_constraintStart_toStartOf="@+id/textViewLightControl"
                     app:layout_constraintTop_toTopOf="@+id/textView11" />
 
-                <Switch
-                    android:id="@+id/switchStateControlIplant"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:checked="true"
-                    android:fontFamily="@font/nunito_sans_extrabold"
-                    android:text="Auto"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    android:thumbTint="@color/white"
-                    android:trackTint="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11"
-                    tools:ignore="TouchTargetSizeCheck" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>

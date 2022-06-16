@@ -321,7 +321,23 @@ public class IplantDetailFragment extends Fragment {
         btnConfirmChange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendNameEdit(edtNameChange.getText().toString(),spinner.getSelectedItem().toString());
+                switch (spinner.getSelectedItem().toString()){
+                    case "Hình iPlant 1":
+                        sendNameEdit(edtNameChange.getText().toString(),"img_iplant_1");
+                        break;
+                    case "Hình iPlant 2":
+                        sendNameEdit(edtNameChange.getText().toString(),"img_iplant_2");
+                        break;
+                    case "Hình iPlant 3":
+                        sendNameEdit(edtNameChange.getText().toString(),"img_iplant_3");
+                        break;
+                    case "Hình iPlant 4":
+                        sendNameEdit(edtNameChange.getText().toString(),"img_iplant_4");
+                        break;
+                    case "Hình iPlant 5":
+                        sendNameEdit(edtNameChange.getText().toString(),"img_iplant_5");
+                        break;
+                }
                 dialog.dismiss();
             }
         });
@@ -336,6 +352,7 @@ public class IplantDetailFragment extends Fragment {
     }
 
     private void sendNameEdit(String nameIplant, String imgIplant) {
+        Log.d("ChangeName", "sendNameEdit: "+ urlEdit+userIplant.getUserAcc()+"&imei="+iplantModel.getImeiIplant());
         StringRequest request = new StringRequest(Request.Method.POST, urlEdit+userIplant.getUserAcc()+"&imei="+iplantModel.getImeiIplant(), new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -358,6 +375,8 @@ public class IplantDetailFragment extends Fragment {
                 Map<String,String> map = new HashMap<String, String>();
                 map.put("name",nameIplant);
                 map.put("img_url",imgIplant);
+                Log.d("ChangeName", "getParams: "+nameIplant);
+                Log.d("ChangeName", "getParams: "+imgIplant);
 
                 return map;
             }
