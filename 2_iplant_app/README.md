@@ -1,7 +1,10 @@
-# Project cuối kỳ môn: Hệ thống nhúng và IoT
-**Tên đề tài: iPlant - Chậu cây IoT**<br />
-Giảng viên: Bùi Hà Đức<br />
-Nhóm sinh viên thực hiện:<br />
+# **FINAL PROJECT: Hệ thống nhúng và IoT**
+**Tên đề tài: iPlant - Chậu cây IoT**
+
+**GVHD: TS. Bùi Hà Đức**
+
+Nhóm sinh viên thực hiện:
+
 1. Nguyễn Trọng Đại
 2. Lê Phan Văn Việt
 3. Trần Triệu Vĩ
