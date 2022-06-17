@@ -128,22 +128,162 @@ Source code Website: [Source Code](https://github.com/ngtrdai/iPlant/tree/master
 
 ## Ứng dụng Android
 
+Source code Website: [Source Code](https://github.com/ngtrdai/iPlant/tree/master/2_iplant_app).
+
+Ứng dụng Android được thực hiện bởi: [Lê Phan Văn Việt](https://github.com/ogarta).
+
+### Đăng nhập và Đăng ký tài khoản
+
+Khi đăng nhập thông tin tài khoản sẽ được lưu lại để tự đông đăng nhập lần tiếp theo.
+
+<p align="center">
+<img 
+width="300"
+height="600"
+src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Andoird_DangNhap_1.jpg"
+>
+	
+<p align="center">
+<img 
+width="300"
+height="600"
+src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Andoird_DangKy_1.jpg"
+></p>
+
+### Trang chủ
+	
+Trang chủ show toàn bộ cây người dùng sở hữu, show các thông số trạng thái hiện tại của chậu cây.
+
+<p align="center">
+<img 
+width="300"
+height="600"
+src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Andoird_TrangChu_1.jpg"
+></p>
+
+Khi nhấn vào vào các chậu cây sẽ đưa ra biểu đồ thông số theo thời gian thực và có thể bật tắt tưới, đèn led vị trí, đèn UV bằng tay.
+
+<p align="center">
+<img 
+width="300"
+height="600"
+src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Andoird_ChiTiet_1.jpg">
+</p>
+
+### Thêm - Xoá - Sửa chậu cây.
+
+#### Thêm chậu cây bằng 2 cách
+
+- Quét mã QR
+- Nhập IMEI
+
+<p align="center">
+<img 
+width="300"
+height="600"
+src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Andoird_ThemChau_1.jpg"
+></p>
+
+#### Xoá chậy cây
+
+Vuốt sang trái để để xoá chậu cây.
+
+#### Đổi tên và ảnh đại diện của chậu cây
+
+<p align="center">
+<img 
+width="300"
+height="600"
+src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Andoird_DoiTen_1.jpg"
+></p>
+
+### Cài đặt kịch bản (Auto) tưới cây
+
+Kịch bản tưới cây sẽ được tạo mặc định và có thể khởi động chạy ở chế độ auto. Người dùng có thể thay đổi được kịch bản (Kịch bản mỗi cây chỉ có một).
+
+<p align="center">
+<img 
+width="300"
+height="600"
+src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Andoird_Auto_1.jpg"
+></p>
+
+<p align="center">
+<img 
+width="300"
+height="600"
+src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Andoird_Auto_2.jpg"
+></p>
+
+### Cài đặt thời gian tưới và chiếu cây
+
+Thời gian tưới cây sẽ bao gồm thời gian ngày thực hiện công việc tưới cây hoặc chiếu sáng hoặc cả 2.
+
+Có chế độ hằng ngày (Mỗi cây có thể có nhiều thời gian thực hiện công việc).
+
+<p align="center">
+<img 
+width="300"
+height="600"
+src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Andoird_Alarm_1.jpg"
+>
+</p>
+<p align="center">
+<img 
+width="300"
+height="600"
+src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/Andoird_Alarm_2.jpg"
+>
+</p>
+
 ## Nhúng Raspberry PI
+Source code nhúng: [Source Code](https://github.com/ngtrdai/iPlant/tree/master/3_iplant_raspberry).
+
+### Cấu trúc file
+    .
+    ├── includes                   # Thư mục chứ các file header.
+    │   ├── dADS1015.h	       # File header của Module ADC ADS1015.
+    │   ├── dBH1705.h              # File header của Module cảm biến cường độ sáng BH1705.
+    │   └── dLM75.h                # File header của Module cảm biến nhiệt độ LM75.
+    │   └── dSHT30.h               # File header của Module cảm biến nhiệt độ, độ ẩm SHT30.
+    │   └── dUltraSonic.h          # File header của Module đo khoảng cách bằng UltraSonic.
+    │   └── main.h                 # File header của chương trình chính.
+    ├── dADS1015.c                 # Source code của Module ADC ADS1015.
+    ├── dBH1705.c                  # Source code của Module cảm biến cường độ sáng BH1705.
+    ├── dLM75.c                    # Source code của Module cảm biến nhiệt độ LM75.
+    ├── dSHT30.c                   # Source code của Module cảm biến nhiệt độ, độ ẩm SHT30.
+    ├── dUltraSonic.c              # Source code của Module đo khoảng cách bằng UltraSonic.
+    └── main.c		       # Source code chương trình chính.
+
 
 # Sản phẩm thực tế
 
 ## Hình ảnh
+<p align="center">
+<img 
+width="396"
+height="529"
+src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/AnhChauCay_HoanChinh.jpg"
+></p>
 
 ## Demo sản phẩm
+Truy cập vào [iPlant WEBSITE](https://iplant.svute.com) hoặc tải [Android APP](https://github.com/ngtrdai/iPlant/releases/download/v1.0.0/iPlant_V1.0.apk)
+
+- Tài khoản ADMIN:
+	- Username: admin
+	- Password: 123123
+- Tài khoản USER:
+	- Username: user
+	- Password: 123123  
 	
 # Liên kết
-[Website]	https://iplant.svute.com
+[Website](https://iplant.svute.com)
 
-[Github]	https://github.com/ngtrdai/iplant-web
+[Github - iPlant Website Repo](https://github.com/ngtrdai/iplant-web)
 
-[Github]	https://github.com/ngtrdai/iplant-raspberry
+[Github - iPlant Raspberry Pi Repo](https://github.com/ngtrdai/iplant-raspberry)
 
-[Github]	https://github.com/ogarta/Iplant_android_app
+[Github - iPlant Android App  Repo](https://github.com/ogarta/Iplant_android_app)
 
 # Contributing
 Cảm ơn các thành viên đã cùng hoàn thành Project.
