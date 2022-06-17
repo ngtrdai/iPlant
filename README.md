@@ -41,7 +41,7 @@
 3. Trần Triệu Vĩ 		- 19146301 		- @trantrieuvi.
 ```
 # Thông tin đề tài
-**iPlant** - Chậy cây IoT là sản phẩm cuối kỳ của môn học **IoT** và **Lập trình nhúng**. 
+**iPlant** - Chậu cây IoT là sản phẩm cuối kỳ của môn học **IoT** và **Lập trình nhúng**. 
 
 **iPlant** có thể giám sát các thông số của chậu cây, điều khiển tưới nước - bật đèn hỗ trợ cây quang hợp tự động hoặc được lên lịch trước thông qua Website và ứng dụng trên hệ điều hành Android.
 
