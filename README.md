@@ -103,25 +103,28 @@ Cơ sở dữ liệu iPlant: [File SQL Backup](https://github.com/ngtrdai/iPlant
 Cơ sở dữ liệu iPlant được xây dựng theo mối quan hệ N-N, một người dùng có thể có nhiều cậu cây, và một chậu cây có thể được tới nối bởi nhiều người.
 
 Mỗi chậu cây hay iPlant được định danh bằng một IMEI.
-
-<p align="center">
-  <img 
-    width="800"
-    height="800"
-    src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/CoSoDuLieu.svg"
-  >
-</p>
+![Bảng dữ liệu mỗi quan hệ của các bảng trong CSDL](https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/CoSoDuLieu.svg "Bảng quan hệ trong CSDL")
 
 ## Website
 
 Website iPlant được xây dựng dựa trên mô hình MVC với ngôn ngữ lập trình chính là PHP.
-<p align="center">
-  <img 
-    width="800"
-    height="1600"
-    src="https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/GiaoDienWebsite.svg"
-  >
-</p>
+
+Source code Website: [Source Code](https://github.com/ngtrdai/iPlant/tree/master/1_iplant_web/1_SourceCode).
+
+![Giao diện Website](https://github.com/ngtrdai/iPlant/blob/master/5_iplant_images/GiaoDienWebsite.svg "Giao diện website")
+
+- **Chức năng của Web:**
+	- **Người dùng**
+		- Thêm/Sửa/Xoá chậu cây bằng IMEI.
+		- Giám sát các thông số từ cảm biến ở chậu cây. Vẽ đồ thị và hiển thị số trực quan.
+		- Điều khiển đèn hỗ trợ quang hợp, máy bơm nước và đèn LED thông báo.
+		- Điều khiển tự động - Cho phép chỉnh sửa các giá trị đặt để iPlant hoạt động tự động.
+		- Hẹn giờ tưới cây, bật đèn quang hợp - Cho phép lặp lại hằng ngày.
+		- Hiển thị thông báo khi chậu cây được tưới nước, bật đèn.
+	- **Quản trị viên**
+		- Quản lý người dùng: Thêm/Xoá/Sửa/Cài đặt phân quyền.
+		- Quản lý chậy cây: Thêm/Xoá/Sửa.
+		- Cho phép tạo chậu cây mới hàng loạt phục vụ cho quá trình sản xuất.	 		
 
 ## Ứng dụng Android
 
