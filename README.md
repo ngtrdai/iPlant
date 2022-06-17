@@ -128,7 +128,7 @@ Source code Website: [Source Code](https://github.com/ngtrdai/iPlant/tree/master
 
 ## Ứng dụng Android
 
-Source code Website: [Source Code](https://github.com/ngtrdai/iPlant/tree/master/2_iplant_app).
+Source code Android: [Source Code](https://github.com/ngtrdai/iPlant/tree/master/2_iplant_app).
 
 Ứng dụng Android được thực hiện bởi: [Lê Phan Văn Việt](https://github.com/ogarta).
 
@@ -255,6 +255,7 @@ Source code nhúng: [Source Code](https://github.com/ngtrdai/iPlant/tree/master/
     ├── dUltraSonic.c              # Source code của Module đo khoảng cách bằng UltraSonic.
     └── main.c		       # Source code chương trình chính.
 
+> Cảm biến LM75 không được sử dụng vì đã đổi sang sử dụng SHT30 vì trùng địa chỉ I2C 🥲.
 
 # Sản phẩm thực tế
 
